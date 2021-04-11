@@ -5,6 +5,7 @@ import ContactUs from "./views/Contactus.js";
 import SignIn from "./views/Signin.js";
 import Cart from "./views/Cart.js";
 import Payment from "./views/Payment.js";
+import Builder from "./views/Builder.js"
 
 const navigateTo = url => {
     history.pushState(null, null, url);
@@ -22,6 +23,7 @@ const router = async () => {
         { path: "/signin", view: SignIn },
         { path: "/payment", view: Payment },
         { path: "/single", view: Single },
+        { path: "/builder", view: Builder },
     ];
 
     const potentialMatches = routes.map(route => {
